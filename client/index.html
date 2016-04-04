@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <script src="/bower_components/jquery/jquery.min.js"></script>
-  <script src="/bower_components/underscore/underscore.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <!-- Scripts -->
+    <script src="/bower_components/jquery/jquery.min.js"></script>
+    <script src="/bower_components/underscore/underscore.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"> </script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   </head>
   <body>
 
-    <div ng-view></div> /<!-- * Template for Angular */ -->
+    <div class="players" ui-view="players"></div> /<!-- Template for Players  -->
+    <div class="draft" ui-view="draft"></div><!-- Template for Draft Order / Picks -->
 
-  <script src="/bower_components/angular/angular.min.js"> </script>
-  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/app/app.js"></script> 
   </body>
   <footer>
   </footer>

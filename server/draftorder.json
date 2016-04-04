@@ -1,0 +1,164 @@
+{
+  "order": [
+    {
+      "pick": "1",
+      "round": "1",
+      "team": "Tennessee Titans"
+    },
+    {
+      "pick": "2",
+      "round": "1",      
+      "team": "Cleveland Browns"
+    },
+    {
+      "pick": "3",
+      "round": "1",      
+      "team": "San Diego Chargers"
+    },
+    {
+      "pick": "4",
+      "round": "1",       
+      "team": "Dallas Cowboys"
+    },
+    {
+      "pick": "5",
+      "round": "1", 
+      "team": "Jacksonville Jaguars"
+    },
+    {
+      "pick": "6",
+      "round": "1", 
+      "team": "Baltimore Ravens"
+    },
+    {
+      "pick": "7",
+      "round": "1",
+      "team": "San Francisco 49ers"
+    },
+    {
+      "pick": "8",
+      "round": "1",
+      "team": "Philadelphia Eagles"
+    },
+    {
+      "pick": "9",
+      "round": "1",
+      "team": "Tampa Bay Bucanners"
+    },
+    {
+      "pick": "10",
+      "round": "1",
+      "team": "New York Giants"
+    },
+    {
+      "pick": "11",
+      "round": "1",
+      "team": "Chicago Bears"
+    },
+    {
+      "pick": "12",
+      "round": "1",
+      "team": "New Orleans Saints"
+    },
+    {
+      "pick": "13",
+      "round": "1",
+      "team": "Miami Dolphins"
+    },
+    {
+      "pick": "14",
+      "round": "1",
+      "team": "Oakland Raiders"
+    },
+    {
+      "pick": "15",
+      "round": "1",
+      "team": "Los Angeles Rams"
+    },
+    {
+      "pick": "16",
+      "round": "1",
+      "team": "Detroit Lions"
+    },
+    {
+      "pick": "17",
+      "round": "1",
+      "team": "Atlanta Falcons"
+    },
+    {
+      "pick": "18",
+      "round": "1",
+      "team": "Indianapolis Colts"
+    },
+    {
+      "pick": "19",
+      "round": "1",
+      "team": "Buffalo Bills"
+    },
+    {
+      "pick": "20",
+      "round": "1",
+      "team": "New York Jets"
+    },
+    {
+      "pick": "21",
+      "round": "1",
+      "team": "Washington Redskins"
+    },
+    {
+      "pick": "22",
+      "round": "1",
+      "team": "Houston Texans"
+    },
+    {
+      "pick": "23",
+      "round": "1",
+      "team": "Minnesota Vikings"
+    },
+    {
+      "pick": "24",
+      "round": "1",
+      "team": "Cincinnati Bengals"
+    },
+    {
+      "pick": "25",
+      "round": "1",
+      "team": "Pittsburgh Steelers"
+    },
+    {
+      "pick": "26",
+      "round": "1",
+      "team": "Seattle Seahawks"
+    },
+    {
+      "pick": "27",
+      "round": "1",
+      "team": "Green Bay Packers"
+    },
+    {
+      "pick": "28",
+      "round": "1",
+      "team": "Kansas City Chiefs"
+    },
+    {
+      "pick": "29",
+      "round": "1",
+      "team": "Arizona Cardinals"
+    },
+    {
+      "pick": "30",
+      "round": "1",
+      "team": "Carolina Panthers"
+    },
+    {
+      "pick": "31",
+      "round": "1",
+      "team": "Denver Broncos"
+    },
+    {
+      "pick": "32",
+      "round": "2",
+      "team": "Cleveland Browns"
+    }
+  ]
+}
