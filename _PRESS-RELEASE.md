@@ -16,33 +16,21 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-  NFL Mock Draft Simulator
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-  Build your own NFL Mock Draft before the real 2016 NFL Draft begins.
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+## NFL Mock Draft Simulator ##
+## Build your own NFL Mock Draft ##
   NFL fans are able to come up with their own mock drafts for the upcoming 2016 NFL draft. Be like Mel Kiper and create your own mock draft. This app will include the top NCAA prospects to choose from. Users will be able to compare their own Mock Draft to the real draft coming up in late April. 
 
 ## Problem ##
-  > Describe the problem your product solves.
   NFL fans are forced to do their own mock drafts with a simple pen and paper. They have to reference outside sources to grab information like the NFL Draft order and NCAA prospects. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
   The NFL Mock Draft Simulator brings all that information into one web application. Users will be able to see the NFL Draft order and see the top NCAA prospects. They will also be able to see their selections in a nice interface
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
   "Be the next Mel Kiper"
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-  It's as easy as selecting a player from the list.
+  Begin by selecting a player from the list of available prospects that you think the current team that is on the clock is going to draft.
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
   "My friends and I were able to use NFL Mock Draft Simulator to make our own mock drafts. We are able to compare our mock drafts with ease thanks to NFL Mock Draft Simulator."
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
   Challenge your football knowledge by coming up with your own mock draft. See how you compare versus professional NFL analysts like Mel Kiper and Todd McShay.
 
