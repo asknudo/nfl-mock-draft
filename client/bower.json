@@ -1,0 +1,23 @@
+{
+  "name": "nfl-mock-draft",
+  "homepage": "https://github.com/asknudo/nfl-mock-draft",
+  "authors": [
+    "Amando Nudo <asknudo@gmail.com>"
+  ],
+  "description": "Client for NFL Mock Draft",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "^1.8.3",
+    "angular": "^1.5.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
