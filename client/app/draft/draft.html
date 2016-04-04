@@ -1,1 +1,10 @@
-<div><p>THIS IS THE DRAFT VIEW</p></div>
+<div>
+  <ul>
+    <li class="draft" ng-repeat="(round, current) in draftlist">
+      <div class="draftInfo">
+        <div class="team">{{ current.team }}</div>
+        <div class="pick">Round: {{ current.round }} Pick: {{ current.pick }}</div>
+      </div>
+    </li>
+  </ul>
+</div>

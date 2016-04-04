@@ -14,7 +14,7 @@ angular.module('mockdraft', [
         },
         'draftView': {
           templateUrl: '/app/draft/draft.html',
-          // controller: ''
+          controller: 'DraftController'
         }
       }
     });
