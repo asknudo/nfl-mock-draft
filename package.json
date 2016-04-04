@@ -1,0 +1,23 @@
+{
+  "name": "nfl-mock-draft",
+  "version": "1.0.0",
+  "description": "\"NFL draft simulator for the 2016 NFL Draft\"",
+  "main": "client/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asknudo/nfl-mock-draft.git"
+  },
+  "keywords": [
+    "nfl",
+    "draft"
+  ],
+  "author": "Amando Nudo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asknudo/nfl-mock-draft/issues"
+  },
+  "homepage": "https://github.com/asknudo/nfl-mock-draft#readme"
+}
