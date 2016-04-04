@@ -12,7 +12,8 @@
     "jquery": "~2.0.3",
     "underscore": "^1.8.3",
     "angular": "^1.5.3",
-    "angular-ui-router": "^0.2.18"
+    "angular-ui-router": "^0.2.18",
+    "angular-toArrayFilter": "^1.0.1"
   },
   "ignore": [
     "**/.*",

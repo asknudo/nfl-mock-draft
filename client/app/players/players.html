@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li class="individualPlayer" ng-repeat="(id, player) in currentPlayers" | orderBy: 'id.player.expertGrade'>
+      <div class="info">
+        <div class="name">{{player.firstName}} {{player.lastName}}</div>
+        <div class="grade">Prospect Grade: {{player.expertGrade}}</div>
+      </div>
+    </li>
+  </ul>
+</div>

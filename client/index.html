@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='mockdraft'>
   <head>
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
     <!-- Scripts -->
     <script src="/bower_components/jquery/jquery.min.js"></script>
-    <script src="/bower_components/underscore/underscore.min.js"></script>
+    <script src="/bower_components/underscore/underscore-min.js"></script>
     <script src="/bower_components/angular/angular.min.js"> </script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-toArrayFilter/toArrayFilter.js"></script>
   </head>
   <body>
 
-    <div class="players" ui-view="players"></div> /<!-- Template for Players  -->
-    <div class="draft" ui-view="draft"></div><!-- Template for Draft Order / Picks -->
+    
+    <!-- <div class="player" ui-view="currentPlayer"></div> For future use that displays a prospects weight, height, etc -->
 
-  <script src="/app/app.js"></script> 
+    <!-- DELETE -->
+    <div class="players" ui-view="playersView"></div> <!-- Template for Players  -->
+    <div class="draft" ui-view="draftView"></div><!-- Template for Draft Order / Picks -->
+
+  <script src="app/players/players.js"></script>
+  <script src="app/draft/draft.js"></script>
+  <script src="app/app.js"></script> 
   </body>
   <footer>
   </footer>
