@@ -4,7 +4,7 @@
   "description": "\"NFL draft simulator for the 2016 NFL Draft\"",
   "main": "client/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "/server/server.js"
   },
   "repository": {
     "type": "git",
