@@ -19,13 +19,11 @@ angular.module('mockdraft.draft', [])
 .factory('Draft', function ($http) {
   var draftSelections = [];
   var getData = function () {
-    console.log('getData is activated (19)');
     return $http({
       method: 'GET',
-      url: 'http://localhost:8000/draftorder.json'
-    }).
-    then(function(res) {
-      console.log(res.data.order);
+      url: 'draftorder.json' // Points to /server/ -> draftorder.json
+    })
+    .then(function(res) {
       return res.data.order;
     });
   };
