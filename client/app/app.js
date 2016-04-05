@@ -29,5 +29,4 @@ angular.module('mockdraft', [
       console.log('Please provide a name');
     }
   };
-
 });

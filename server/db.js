@@ -11,4 +11,30 @@ db.once('open', function() {
   console.log('Connection to data');
 });
 
-module.exports = mongoose;
+var mockDrafts = mongoose.Schema( {
+  name: String,
+  draft: [{
+    personId: Number,
+    firstName: String,
+    lastName: String,
+    pickAnalysis: String,
+    hasAnalysis: String,
+    video: String,
+    pick: String,
+    college: String,
+    pos: String,
+    height: String,
+    weight: Number,
+    armLength: String,
+    handSize: String,
+    expertGrade: Number,
+    fanPick: Number,
+    schoolYear: Number   
+  }]
+});
+
+mockDrafts.set('validateBeforeSave', false); // NFL.com returns JSON null on some data
+
+var MockDraft = mongoose.model('MockDraft', mockDrafts);
+
+module.exports = MockDraft;

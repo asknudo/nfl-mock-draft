@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var parse = require('body-parser');
+var MockDraft = require('./db.js');
 
 // Port is either Heroku port or 8000
 var port = process.env.PORT || 8000;
@@ -32,7 +33,23 @@ app.get('/draftorder.json', function (req, res) {
 var jsonParse = parse.json();
 
 app.post('/mockdraft', jsonParse, function (req, res) {
-  console.log(req.body);
+  var name = req.body.name;
+  var savedDraft = req.body.draft;
+
+  MockDraft.findOne({name: name})
+    .then(function(found) {
+      if (found) {
+        console.log("Name already exists in DB");
+      } else {
+        var current = new MockDraft({
+          name: name,
+          draft: savedDraft
+        });
+        current.save(function(err, newMock) {
+          console.log(newMock + " is saved");
+        });
+      }
+    });
 
 });
 
