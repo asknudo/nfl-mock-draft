@@ -23,7 +23,6 @@ angular.module('mockdraft.players', ['mockdraft.draft'])
 .factory('Players', function ($http) {
   // var players = prospects; // ToDo: Grab from Players.JSON when built
   var getData = function () {
-    console.log('Player.getData is ran (24)');
     return $http({
       method: 'GET',
       url: 'players.json'

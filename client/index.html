@@ -14,9 +14,9 @@
   <body>
     <h1>NFL Mock Draft Simulator</h1>
     
-    <!-- <div class="player" ui-view="currentPlayer"></div> For future use that displays a prospects weight, height, etc -->
 
-    <!-- DELETE -->
+      <div class="container">Current Selection: {{draftData[draft.length].team || "Tennessee Titans"}} with Pick {{draft.length + 1}} <br>
+      </div>
       <div class="players" ui-view="playersView"></div> <!-- Template for Players  -->
       <div class="container"></div>
       <div class="draft" ui-view="draftView"></div><!-- Template for Draft Order / Picks -->

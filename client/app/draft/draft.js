@@ -8,6 +8,7 @@ angular.module('mockdraft.draft', ['mockdraft.players'])
   $scope.getDraftlist = function () {
     Draft.getData()
       .then(function (data) {
+        $rootScope.draftData = data;
         $scope.draftlist = data;
       })
       .catch(function (err) {
