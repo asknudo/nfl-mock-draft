@@ -18,6 +18,7 @@ angular.module('mockdraft.draft', ['mockdraft.players'])
 
   $scope.draftMe = function (playerObj) {
     Draft.addPlayer(playerObj);
+    console.log($rootScope.draft);
     $rootScope.draft = Draft.getAllPicks(); // Give draft selection access to templates
   };
   

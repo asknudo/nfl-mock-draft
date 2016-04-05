@@ -6,7 +6,7 @@
       <div class="pick">Round: {{ current.round }} Pick: {{ current.pick }}</div>
     </div>
     <div>
-      <p>Selected: {{draft[current.pick - 1].firstName}} {{draft[current.pick -1].lastName}}</p>
+      <p ng-hide="!draft[current.pick-1]">Selected: {{draft[current.pick - 1].firstName}} {{draft[current.pick -1].lastName}} - Position: {{draft[current.pick - 1].pos}}</p>
     </div>
   </li>
 </ul>
