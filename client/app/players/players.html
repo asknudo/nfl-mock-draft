@@ -1,9 +1,7 @@
 <div>
   <ul>
     <li class="individualPlayer" ng-repeat="(id, player) in currentPlayers" | orderBy: 'id.player.expertGrade'>
-      <div class="info">
-        <div class="name">{{player.firstName}} {{player.lastName}}</div>
-        <div class="grade">Prospect Grade: {{player.expertGrade}}</div>
+      <div class="info">Name: {{player.firstName}} {{player.lastName}} <span class="grade">Grade: {{player.expertGrade}}</span>
       </div>
     </li>
   </ul>
