@@ -1,6 +1,19 @@
-<div>
+<!-- <div>
   <ul>
     <li class="draft" ng-repeat="(round, current) in draftlist">
+      <div class="draftInfo">
+        <div class="team">{{ current.team }}</div>
+        <div class="pick">Round: {{ current.round }} Pick: {{ current.pick }}</div>
+      </div>
+    </li>
+  </ul>
+</div>
+ -->
+
+
+<div>
+  <ul>
+    <li class="draft" ng-repeat="current in draftlist">
       <div class="draftInfo">
         <div class="team">{{ current.team }}</div>
         <div class="pick">Round: {{ current.round }} Pick: {{ current.pick }}</div>
