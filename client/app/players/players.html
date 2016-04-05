@@ -3,7 +3,7 @@
     <li class="individualPlayer" ng-repeat="player in currentPlayers | orderBy: '-expertGrade'">
       <div class="info">Name: {{player.firstName}} {{player.lastName}} <span class="grade">Grade: {{player.expertGrade}}</span>
       </div>
-      <button ng-click="draftMe(player)">Draft Player</button>
+      <button ng-controller="DraftController" ng-click="draftMe(player)">Draft Player</button>
     </li>
   </ul>
 </div>

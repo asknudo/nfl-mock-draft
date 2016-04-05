@@ -1,0 +1,13 @@
+body {
+  padding:10px;
+}
+
+.players {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.draft {
+  overflow-y: auto;
+  height: 700px;
+}

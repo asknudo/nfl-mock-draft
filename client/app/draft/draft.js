@@ -1,7 +1,10 @@
 angular.module('mockdraft.draft', ['mockdraft.players'])
 
-.controller('DraftController', function ($scope, Draft, Players) {
+.controller('DraftController', function ($scope, $rootScope, Draft) {
   // $scope.draftlist = draftOrder;
+  
+  
+
   $scope.getDraftlist = function () {
     Draft.getData()
       .then(function (data) {
@@ -11,20 +14,19 @@ angular.module('mockdraft.draft', ['mockdraft.players'])
         console.error(err);
       });
   };
+
+  $scope.draftMe = function (playerObj) {
+    Draft.addPlayer(playerObj);
+    $rootScope.draft = Draft.getAllPicks(); // Give draft selection access to templates
+  };
   
   // Grab pick from draft selections collection
-  $scope.getPick = function (currentRound) {
-    getCurrentPick(currentRound);
-  };
-
-  // Add player to draft selections collection
-  $scope.draftMe = function (playerObj) {
-    console.log(playerObj);
-    Draft.addPlayer(playerObj);
-    $scope.testVariable = Draft.getAllPicks();
+  $scope.getPick = function ($scope, currentRound) {
+    Draft.getCurrentPick(currentRound);
   };
 
   // Initialize
+  $scope.draftviewcollection = Draft.getAllPicks();
   $scope.getDraftlist();
 })
 
@@ -50,6 +52,7 @@ angular.module('mockdraft.draft', ['mockdraft.players'])
 
   var addPlayer = function (player) {
     draftSelections.push(player);
+    
   };
 
   var getAllPicks = function() {
