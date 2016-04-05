@@ -4,7 +4,7 @@
   "description": "\"NFL draft simulator for the 2016 NFL Draft\"",
   "main": "client/index.html",
   "scripts": {
-    "start": "/server/server.js"
+    "start": "node /server/server.js"
   },
   "repository": {
     "type": "git",
