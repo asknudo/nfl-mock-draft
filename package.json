@@ -4,7 +4,8 @@
   "description": "\"NFL draft simulator for the 2016 NFL Draft\"",
   "main": "./server/server.js",
   "scripts": {
-    "start": "node ./server/server.js"
+    "start": "node ./server/server.js",
+    "postinstall": "cd client && bower install"
   },
   "repository": {
     "type": "git",
