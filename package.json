@@ -2,9 +2,9 @@
   "name": "nfl-mock-draft",
   "version": "1.0.0",
   "description": "\"NFL draft simulator for the 2016 NFL Draft\"",
-  "main": "client/index.html",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "node /server/server.js"
+    "start": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
