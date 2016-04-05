@@ -1,6 +1,6 @@
-angular.module('mockdraft.players', [])
+angular.module('mockdraft.players', ['mockdraft.draft'])
 
-.controller('PlayersController', function ($scope, Players) {
+.controller('PlayersController', function ($scope, $rootScope, Players, Draft) {
   // $scope.currentPlayers = prospects;
   $scope.getCurrentPlayers = function () {
     Players.getData()
@@ -10,6 +10,12 @@ angular.module('mockdraft.players', [])
     .catch(function (err) {
       console.error(err);
     });
+  };
+    // Add player to draft selections collection
+  $scope.draftMe = function (playerObj) {
+    console.log(playerObj);
+    Draft.addPlayer(playerObj);
+    $rootScope.testVariable = Draft.getAllPicks();
   };
 
   // Initialize 
@@ -26,7 +32,6 @@ angular.module('mockdraft.players', [])
       url: 'players.json'
     })
     .then(function (res) {
-      console.log(res.data.prospects);
       return res.data.prospects;
     });
   };
