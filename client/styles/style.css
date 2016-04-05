@@ -1,13 +1,43 @@
 body {
-  padding:10px;
+  width:768px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
 }
 
-.players {
+
+.playerList {
+  float: left;
+  width: 50%;
   overflow-y: auto;
   height: 300px;
 }
+.playerProfile {
+  float:left;
+  width: 25%;
+  height: 300px;
+}
+.container {
+  clear: both;
 
+}
 .draft {
   overflow-y: auto;
   height: 700px;
+
+}
+
+.individualPlayer {
+  padding: 5px;
+}
+
+.playerBio {
+  float: right;
+  width: 25%;
+  margin-top: 100px;
+}
+
+.nflsource {
+  font-size: xx-small;
 }

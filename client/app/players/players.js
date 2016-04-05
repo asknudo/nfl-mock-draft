@@ -12,6 +12,9 @@ angular.module('mockdraft.players', ['mockdraft.draft'])
       console.error(err);
     });
   };
+  $scope.showProfile = function (player) {
+    $scope.currentProfile = player;
+  };
   $scope.getCurrentPlayers();
 
   

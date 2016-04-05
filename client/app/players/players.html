@@ -1,7 +1,19 @@
-<ul>
-  <li class="individualPlayer" ng-repeat="player in currentPlayers | orderBy: '-expertGrade'" ng-hide="drafted">
-    <div class="info">Name: {{player.firstName}} {{player.lastName}} <span class="grade">Grade: {{player.expertGrade}}</span>
-    </div>
-    <button ng-controller="DraftController" ng-click="draftMe(player); $parent.drafted=true">Draft Player</button>
-  </li>
-</ul>
+<div class="playerList">
+  <ul>
+    <li class="individualPlayer" ng-repeat="player in currentPlayers | orderBy: '-expertGrade'" ng-hide="drafted" ng-click="showProfile(player)">
+      <div class="info" >{{player.firstName}} {{player.lastName}} <span class="pos">- {{player.pos}} </span> 
+      </div>
+     <button ng-controller="DraftController" ng-click="draftMe(player); $parent.drafted=true">Draft Player</button>  <span class="grade">Grade: {{player.expertGrade}}</span>
+    </li>
+  </ul>
+</div> 
+<div class="playerProfile">
+  <h3>{{currentProfile.firstName}} {{currentProfile.lastName}}</h3>
+  <img src="http://static.nfl.com/static/content/static/img/combine/headshots/{{currentProfile.personId}}.jpg">
+  <p class="nflsource" ng-if="currentProfile">Picture from NFL.com</p>
+</div>
+<div class="playerBio" ng-if="currentProfile">Height: {{currentProfile.height}} <br>
+  Weight: {{currentProfile.weight}} <br>
+  Arm Length: {{currentProfile.armLength}} <br>
+  Hand Size: {{currentProfile.handSize}}
+</div>
