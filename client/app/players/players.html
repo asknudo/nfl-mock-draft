@@ -1,9 +1,7 @@
-<div>
-  <ul>
-    <li class="individualPlayer" ng-repeat="player in currentPlayers | orderBy: '-expertGrade'">
-      <div class="info">Name: {{player.firstName}} {{player.lastName}} <span class="grade">Grade: {{player.expertGrade}}</span>
-      </div>
-      <button ng-controller="DraftController" ng-click="draftMe(player)">Draft Player</button>
-    </li>
-  </ul>
-</div>
+<ul>
+  <li class="individualPlayer" ng-repeat="player in currentPlayers | orderBy: '-expertGrade'" ng-hide="drafted">
+    <div class="info">Name: {{player.firstName}} {{player.lastName}} <span class="grade">Grade: {{player.expertGrade}}</span>
+    </div>
+    <button ng-controller="DraftController" ng-click="draftMe(player); $parent.drafted=true">Draft Player</button>
+  </li>
+</ul>

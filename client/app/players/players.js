@@ -2,6 +2,7 @@ angular.module('mockdraft.players', ['mockdraft.draft'])
 
 .controller('PlayersController', function ($scope, Players) {
   // $scope.currentPlayers = prospects;
+  $scope.drafted = false;
   $scope.getCurrentPlayers = function () {
     Players.getData()
     .then( function (data) {
@@ -12,6 +13,7 @@ angular.module('mockdraft.players', ['mockdraft.draft'])
     });
   };
   $scope.getCurrentPlayers();
+
   
 })
 
