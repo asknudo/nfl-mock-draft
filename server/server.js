@@ -1,5 +1,5 @@
 var express = require('express');
-
+var path = require('path');
 var app = express();
 
 // Port is either Heroku port or 8000
@@ -10,3 +10,21 @@ console.log('Server now listening on port ' + port);
 
 module.exports = app;
 
+app.use('/', express.static(__dirname + '/../client/'));
+
+
+
+// Serve up Players list
+app.get('/players.json', function (req, res) {
+  // res.writeHead(200, { "Content-Type": "text/html" });
+  res.sendFile(path.join(__dirname + '/players.json'));
+
+});
+
+
+// Serve up the Draft Order
+app.get('/draftorder.json', function (req, res) {
+  // res.writeHead(200, { "Content-Type": "text/html" });
+  res.sendFile(path.join(__dirname + '/draftorder.json'));
+
+});
