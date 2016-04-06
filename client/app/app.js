@@ -21,12 +21,17 @@ angular.module('mockdraft', [
   $urlRouterProvider.otherwise('/');
 
 }])
-.controller('MainController', function ($scope, $rootScope, $http) {
+.controller('MainController', function ($scope, $rootScope, $http, $window) {
   $scope.saveMockDraft = function (name, draft) {
     if (name.length) {
-      $http.post('/mockdraft', {name: name, draft: draft});
+      $http.post('/mockdraft', {name: name, draft: draft}, {}).then(function (res) {
+        $window.location.href ='/mockdraft';
+      });
     } else {
       console.log('Please provide a name');
     }
   };
 });
+
+
+

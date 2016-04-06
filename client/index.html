@@ -14,11 +14,14 @@
   <body>
     <h1>NFL Mock Draft Simulator</h1>
     
-      <div class="container">First Round completed.
+      <div class="container" ng-if="draft.length + 1 < 33">Current Selection: {{draftData[draft.length].team || "Tennessee Titans"}} with Pick {{draft.length + 1}} <button class="nav" onclick="window.location.href='/mockdraft/index.html'">Saved Mock Drafts</button>
+      </div>
+      <div class="container" ng-hide="draft.length + 1 < 33">First Round completed. 
         <form>
           <br>Name of Mock Draft<br>
-          <input type="text" name="name" ng-model="saveName"><br>
-          <button ng-click="saveMockDraft(saveName, draft)">Save Mock Draft</button>
+          <input type="text" name="name" ng-model="saveName">
+          <button class="nav" onclick="window.location.href='/mockdraft/index.html'">Saved Mock Drafts</button><br>
+          <button ng-click="saveMockDraft(saveName, draft)">Save Your Draft</button>
         </form>
       </div>
 

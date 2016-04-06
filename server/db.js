@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 // Link to Mongolab or Local db
-mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/nfldb';
+mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/nfl_mock_draft';
 
 
 mongoose.connect(mongoURI); 

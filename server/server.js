@@ -46,12 +46,19 @@ app.post('/mockdraft', jsonParse, function (req, res) {
           draft: savedDraft
         });
         current.save(function(err, newMock) {
-          console.log(newMock + " is saved");
+          console.log(newMock.name + " is saved");
+          res.sendStatus(200);
         });
       }
     });
 
 });
 
+app.get('/mockdraft/savedLists', function (req, res) {
+  MockDraft.find({}).then(function(data) {
+    res.send(200, data);
+  });
+
+});
 
 module.exports = app;

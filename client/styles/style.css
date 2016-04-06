@@ -41,3 +41,6 @@ body {
 .nflsource {
   font-size: xx-small;
 }
+.nav {
+  float: right;
+}
