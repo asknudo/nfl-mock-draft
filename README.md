@@ -15,8 +15,11 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
+ ## Intro ##
+
+ This was a web app I developed in a day and a half as a project. The main goal was for me to get familiar with the MEAN stack. (Mongo, Express, Angular and Node)
  
-## NFL Mock Draft Simulator ##
+## NFL Mock Draft Simulator (1st Round) ##
 ## Build your own NFL Mock Draft ##
   NFL fans are able to come up with their own mock drafts for the upcoming 2016 NFL draft. Be like Mel Kiper and create your own mock draft. This app will include the top NCAA prospects to choose from. Users will be able to compare their own Mock Draft to the real draft coming up in late April. 
 
